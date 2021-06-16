@@ -1,0 +1,161 @@
+@import '../breakpoints/media-queries';
+
+   /************************************/
+  /*********** 1 Header Menu Css*******/
+ /************************************/
+ .al-header-menu-section{
+        box-shadow: 0px 0px 95px 0px #7070702e;
+        
+    .al-header-menu-area{
+        position: relative;
+        .al-logo-area{
+            .al-logo{
+                a{
+                    img{
+                         
+                    }
+    
+                }
+            }
+        .al-menu-icon{
+            display: none;
+            a{ 
+                width: 4rem;
+                height: 4rem;
+                background-color: #2C2643;
+                color: #FFFFFF;
+                display: inline-block;
+                font-size: 18px;
+                line-height: 39px;
+                text-align: center;
+                border-radius: 5px;
+                i{
+                }
+            }
+            @include desktop{
+                display: block;
+                padding:$padding 0rem;
+            }
+        }       
+        @include desktop{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        }
+        .al-menu-area{
+            display: flex ;
+            justify-content: space-between;
+            align-items: center;
+            .al-menu{
+                ul {
+                    display: flex;
+                    align-items: center;
+                    li{
+                        padding-right: 3rem;
+                        a{
+                            color:$heading-Color;
+                            font-size: $menufont-size;
+                            font-weight: $menufont-weight;
+                            transition: .3s;
+                            &:hover{
+                                color:#FF4B98;
+                            }
+                        }
+                        
+                    }
+                    @include desktop{
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+                @include desktop{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .al-button-area{
+                padding:2rem 0rem;
+                @include desktop{
+                    padding:0rem;
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    @include desktop{
+                        flex-direction: column;
+
+                    }
+                     
+                    li{  
+                        &:first-child{
+                            margin-right: $margin;
+                            @include desktop{
+                                margin: 0rem;
+                                max-width: 120px;
+                                width: 100%;
+                                text-align: left;
+                            }
+                            
+                        }
+                         
+                        a{ 
+                            font-size: $menufont-size;
+                            font-weight: $menufont-weight;
+                            color: $heading-Color;
+                            &:hover{
+                                color:#FF4B98;
+                            }
+                            
+                        }
+                        @include desktop{
+                            margin-top: $padding;
+                        }
+                    }
+                    li:last-child a{
+                        color:#fff;
+                        padding:$button-padding;
+                        text-transform:capitalize;
+                        background-color: #FF4B98;
+                        font-size: 1.5rem;
+                        border-radius: .5rem;
+                        transition: .3s;
+                        &:hover{
+                            color:$heading-Color;
+                        }
+                        @include desktop{
+                            display: block;
+                        }
+                    }
+                    
+                }
+            }
+            @include desktop{
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                border-radius:0px 0px 10px 10px;
+                padding: 2rem 0rem;
+                background-image: linear-gradient(197deg, #8AE092, #19CF89) !important;
+                z-index: 10;
+            }
+            @include desktop{
+                text-align: center;
+            }
+        }
+
+    }
+    
+ }
+ .fixedMenu{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: #ffff;
+    border-bottom: 1px solid #0000004a;
+     
+ }

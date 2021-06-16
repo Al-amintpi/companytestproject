@@ -1,0 +1,191 @@
+@import '../breakpoints/media-queries';
+   /************************************/
+  /****** Grouth Potential Css ********/
+ /************************************/
+.al-growth-section{
+    
+    .al-growth-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1D25FF;
+        padding:4rem 3rem;
+        border-radius: .5rem;
+        transform: translateY(76px);
+        @include desktop{
+            flex-direction: column;
+        }
+         
+        .al-growth-content{
+            h1{
+                color:#FFFFFF;
+                font-size: $heading-fontsize;
+                font-weight: $heading-fontweight;
+                @include desktop{
+                    font-size: $heading-mediafontsize;
+                }
+                @include desktop{
+                    margin-bottom: $padding;
+                }
+            }
+            p{
+                color:#ECECEC;
+                font-size: $paragraph-fontsize;
+                font-weight: 300;
+            }
+            @include desktop{
+                text-align: center;
+            }
+        }
+        .al-growth-button{
+            a{
+                font-size: 1.7rem;
+                background-color: $button-color;
+                color:#1D25FF;
+                font-weight: $menufont-weight;
+                padding:$padding;
+                border-radius: 5px;
+                transition: .3s;
+                display: block;
+                &:hover{
+                    color:$heading-Color;
+                }
+                @include partner-position{
+                    font-size: 1.5rem;
+                }
+            }
+            p{
+                color:$button-color;
+                font-weight: 300;
+                padding-top: $padding;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+   /************************************/
+  /*********** Footer Css *************/
+ /************************************/
+
+.al-footer-section{
+    background-color: $footer-Bgcolor;
+    padding-top: 11rem;
+    padding-bottom: $padding;
+    .footer-area{
+        .footer-title{
+            h1{
+                color: $footer-titleColor;
+                font-size: $footer-titlefontsize;
+                font-weight: $menufont-weight;
+                margin-bottom: $margin;
+                @include tablet{
+                    margin-top: 1rem;
+                }
+            }
+        }
+        @include tablet{
+            text-align: center;
+        }
+    }
+    .footer-list{
+        ul{
+            li{
+                margin-bottom: .5rem;
+                a{
+                    color:$footer-listColor;
+                    font-size: $footer-listfontsize;
+                    transition: .3s;
+                    &:hover{
+                        color:$button-Bgcolor;
+                    }
+                }
+                
+            }
+        }
+    }
+    .social-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:2rem 0rem;
+        border-bottom: 1px solid #ccc2c2ba;
+        @include mobile{
+            flex-direction: column;
+        }
+        .langues-choice{
+            .second-selected-option{ 
+                .second-selecteddiv{
+                        label{
+                            position: relative;
+                            select{
+                                appearance: none;
+                                width: 20rem;
+                                padding: 1rem;
+                                background:$footer-Bgcolor;
+                                border: 1px solid #ccc2c2ba;
+                                color:$button-color;
+                                font-size: 1.6rem;
+                                border-radius: .5rem;
+                                option{
+                                    
+                                }
+
+                            }
+                            &::after{
+                                content: '\f0dd';
+                                font: normal normal normal 17px/1 FontAwesome;
+                                color: $button-color;
+                                right: 0px;
+                                top: 12px;
+                                position: absolute;
+                                pointer-events: none;
+                                padding-right:1rem;
+                            }
+                            
+                        }  
+                    
+                }
+                
+            }
+        }
+        .social-icon{
+            ul{
+                display: flex;
+                align-items: center;
+                @include mobile{
+                    flex-wrap: wrap;
+                    margin-left: $padding;
+                    margin-top: 1rem;
+                }
+                li{
+                    margin-right: $margin;
+                    a{
+                        color:$button-color;
+                        font-size: 1.6rem;
+                        transition: .3s;
+                        &:hover{
+                            color:$button-Bgcolor;
+                        }
+                        i{
+
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .copyright{
+        @include mobile{
+            text-align: center;
+        }
+        p{
+            color:$button-color;
+            font-size: 1.6rem;
+            padding-top: $padding;
+        }
+
+    }
+}
