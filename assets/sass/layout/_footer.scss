@@ -1,91 +1,41 @@
 @import '../breakpoints/media-queries';
-   /************************************/
-  /****** Grouth Potential Css ********/
- /************************************/
-.al-growth-section{
-    
-    .al-growth-area{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #1D25FF;
-        padding:4rem 3rem;
-        border-radius: .5rem;
-        transform: translateY(76px);
-        @include desktop{
-            flex-direction: column;
-        }
-         
-        .al-growth-content{
-            h1{
-                color:#FFFFFF;
-                font-size: $heading-fontsize;
-                font-weight: $heading-fontweight;
-                @include desktop{
-                    font-size: $heading-mediafontsize;
-                }
-                @include desktop{
-                    margin-bottom: $padding;
-                }
-            }
-            p{
-                color:#ECECEC;
-                font-size: $paragraph-fontsize;
-                font-weight: 300;
-            }
-            @include desktop{
-                text-align: center;
-            }
-        }
-        .al-growth-button{
-            a{
-                font-size: 1.7rem;
-                background-color: $button-color;
-                color:#1D25FF;
-                font-weight: $menufont-weight;
-                padding:$padding;
-                border-radius: 5px;
-                transition: .3s;
-                display: block;
-                &:hover{
-                    color:$heading-Color;
-                }
-                @include partner-position{
-                    font-size: 1.5rem;
-                }
-            }
-            p{
-                color:$button-color;
-                font-weight: 300;
-                padding-top: $padding;
-                text-align: center;
-            }
-        }
-    }
-}
-
+ 
 
    /************************************/
   /*********** Footer Css *************/
  /************************************/
 
 .al-footer-section{
+    position: relative;
     background-color: $footer-Bgcolor;
-    padding-top: 11rem;
+    padding-top: 17rem;
     padding-bottom: $padding;
     .footer-area{
+        @include desktop{
+            margin-bottom: 3rem;
+        }
         .footer-title{
             h1{
                 color: $footer-titleColor;
                 font-size: $footer-titlefontsize;
                 font-weight: $menufont-weight;
                 margin-bottom: $margin;
+
                 @include tablet{
                     margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+                @include mobile{
+                    margin-bottom: 1rem;
                 }
             }
         }
-        @include tablet{
+        .al-footer-margin{
+            @include small-xdevice{
+                margin-top: 65px;
+            }
+        }
+        @include desktop{
             text-align: center;
         }
     }
@@ -109,42 +59,154 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:2rem 0rem;
-        border-bottom: 1px solid #ccc2c2ba;
+        border-bottom: 1px solid #ccc2c247;
+        margin-top:5rem;
+        padding-bottom: 3rem;
         @include mobile{
             flex-direction: column;
+            align-items: start;
+            width: 50%;
+            margin:0 auto;
+            margin-top: 5rem;
+
         }
         .langues-choice{
+            position: relative;
             .second-selected-option{ 
+                position: absolute;
+                top:-22px;
+                left: 0;
                 .second-selecteddiv{
-                        label{
-                            position: relative;
-                            select{
-                                appearance: none;
-                                width: 20rem;
-                                padding: 1rem;
-                                background:$footer-Bgcolor;
-                                border: 1px solid #ccc2c2ba;
-                                color:$button-color;
-                                font-size: 1.6rem;
-                                border-radius: .5rem;
-                                option{
+                     
+                    label{
+                        position: relative;
+                        select{
+                            appearance: none;
+                            width: 20rem;
+                            padding: 1rem;
+                            background:$footer-Bgcolor;
+                            border: 1px solid #ccc2c247;
+                            color:$button-color;
+                            font-size: 1.6rem;
+                            border-radius: .5rem;
+                            option{
+                                
+                            }
+
+                        }
+                        &::after{
+                            content: '\f0dd';
+                            font: normal normal normal 17px/1 FontAwesome;
+                            color: $button-color;
+                            right: 0px;
+                            top: 12px;
+                            position: absolute;
+                            pointer-events: none;
+                            padding-right:1rem;
+                        }
+                        
+                    } 
+                    .translate_wrapper{
+                         
+                        z-index: 1;
+                        font-size: 16px;
+                        background: transparent;
+                        border-radius: 4px;
+                        border: 1px solid #ffffff47;
+                        color: #D8D8D8;
+                        .current_lang{
+                            cursor:pointer;
+                            text-transform:capitalize;
+                            overflow:hidden;
+                            .lang{
+                                display: flex;
+                                align-items: center;
+                                padding:10px 12px;
+                                span.lang-txt{
+                                    display:inline-block;
+                                    margin-left:10px;
+                                    vertical-align:middle;
+                                    font-size: 16px;
+                                    position:relative;
+                                    top:-1px;
+                                }
+                                img{
+                                    width:20px;
+                                    margin-left:0; 
+                                }
+                                span.fa{
+                                    color:#999;
+                                    font-weight:400;
+                                    font-size:12px;
+                                    position:relative;
+                                    top:-1px;
+                                    margin-left:30px;
+                                    i{
+                                        font-size: 20px;
+                                    }
                                     
                                 }
-
+                                 
                             }
-                            &::after{
-                                content: '\f0dd';
-                                font: normal normal normal 17px/1 FontAwesome;
-                                color: $button-color;
-                                right: 0px;
-                                top: 12px;
-                                position: absolute;
-                                pointer-events: none;
-                                padding-right:1rem;
+                        }
+                        .more_lang{
+                            transform:translateY(-20px);
+                            opacity:0;
+                            cursor:pointer;
+                            display:none;
+                            -webkit-transition: all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+                                -moz-transition:    all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+                                -o-transition:      all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+                                -ms-transition:     all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+                                transition:         all .3s cubic-bezier(.25, 1.15, .35, 1.15);
+                            .lang{
+                                span.lang-txt{
+                                    display:inline-block;
+                                    margin-left:10px;
+                                    vertical-align:middle;
+                                    font-size: 16px;
+                                    position:relative;
+                                    top:-1px;
+                                }
+                                span{
+                                    color:#999;
+                                    font-weight:400;
+                                }
                             }
+                        }
+                    }
+                    .translate_wrapper.active{
+                        .more_lang{
+                            display: block
+                        }
+                        .more_lang.active{
+                            opacity:1;
+                            transform:translateY(-0px);
+                            background: #2C2643;
+                            .lang{
+                                padding: 10px 12px;
+                                border-top:1px solid #ffffff47;
+                                display: flex;
+                                border-right: 1px solid #ffffff47;
+                                align-items: center;
+                                img{
+                                    width: 20px;
+                                    margin-left:0;
+                                }
+                            }
+                        }
+                        .more_lang .lang:hover{
+                            background:#5766b2;
+                            color:#fff;
+                        }
+                        .more_lang .lang:hover span{
+                            color:#fff;
+                        }
+                        .translate_wrapper.active .lang{
+                            border-bottom:1px solid #eaeaea;
                             
-                        }  
+                          }  
+                    }
                     
                 }
                 
@@ -157,10 +219,13 @@
                 @include mobile{
                     flex-wrap: wrap;
                     margin-left: $padding;
-                    margin-top: 1rem;
+                    margin-top: 2rem;
                 }
                 li{
                     margin-right: $margin;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
                     a{
                         color:$button-color;
                         font-size: 1.6rem;
@@ -188,4 +253,87 @@
         }
 
     }
+
+    .al-growth-section{
+        position: absolute;
+        top: -107px;
+        left: 0;
+        width: 100%;
+        @include desktop{
+            top: -192px;
+        }
+        @include small-device{
+            top:-247px;
+        }
+        .al-growth-area{
+            display: flex;
+            justify-content: space-between;
+            background-color: #1D25FF;
+            padding:6rem 6rem;
+            border-radius: .5rem;
+            @include partner-position{
+                padding:4rem 3rem;
+            }
+            @include desktop{
+                flex-direction: column;
+                align-items: center;
+            }
+             
+            .al-growth-content{
+                h1{
+                    color:#FFFFFF;
+                    font-size: $heading-fontsize;
+                    font-weight: $heading-fontweight;
+                    @include desktop{
+                        font-size: $heading-mediafontsize;
+                    }
+                    @include desktop{
+                        margin-bottom: $padding;
+                    }
+                }
+                p{
+                    color:#ECECEC;
+                    font-size: $paragraph-fontsize;
+                    font-weight: 300;
+                    margin-top: 1rem;
+                }
+                @include desktop{
+                    text-align: center;
+                }
+            }
+            .al-growth-button{
+                a{
+                    font-size: 1.7rem;
+                    background-color: $button-color;
+                    color:#1D25FF;
+                    font-weight: $menufont-weight;
+                    padding:$button-padding;
+                    border-radius: 5px;
+                    transition: .3s;
+                    display: inline-block;
+                    &:hover{
+                        color:$heading-Color;
+                    }
+                    @include partner-position{
+                        font-size: 1.5rem;
+                        padding:1rem;
+                    }
+                    @include small-xdevice{
+                        padding:1rem;
+                    }
+                }
+                p{
+                    color:$button-color;
+                    font-weight: 300;
+                    text-align: center;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
 }
+
+  /************************************/
+  /****** Grouth Potential Css ********/
+ /************************************/
+ 

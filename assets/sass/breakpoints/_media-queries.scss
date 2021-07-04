@@ -27,3 +27,26 @@
      @content;
     } 
 }
+
+@mixin  partner-section {
+    @media all and(min-width:1400px){
+        @content;
+    }
+}
+
+@mixin partner-section-2{
+    @media only screen and (max-width: 1199px) and (min-width: 992px) {
+        @content;
+       }
+}
+
+@mixin small-device {
+    @media all and (max-width: 516px){
+        @content;
+       } 
+}
+@mixin small-xdevice {
+    @media all and (max-width: 357px){
+        @content;
+       } 
+}

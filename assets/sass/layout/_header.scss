@@ -4,7 +4,8 @@
   /*********** 1 Header Menu Css*******/
  /************************************/
  .al-header-menu-section{
-        box-shadow: 0px 0px 95px 0px #7070702e;
+    box-shadow: 0px 0px 191px 0px #70707024;
+    border-bottom: 1px solid #00000014;
         
     .al-header-menu-area{
         position: relative;
@@ -52,7 +53,14 @@
                     display: flex;
                     align-items: center;
                     li{
-                        padding-right: 3rem;
+                        padding-right: 5rem;
+                        @include desktop{
+                            padding-right: 0rem;
+                            padding-top: 1rem;
+                        }
+                        &:last-child{
+                            padding-right: 0rem;
+                        }
                         a{
                             color:$heading-Color;
                             font-size: $menufont-size;
@@ -66,7 +74,7 @@
                     }
                     @include desktop{
                         flex-direction: column;
-                        align-items: flex-start;
+                         
                     }
                 }
                 @include desktop{
@@ -75,7 +83,7 @@
                 }
             }
             .al-button-area{
-                padding:2rem 0rem;
+                padding:3rem 0rem;
                 @include desktop{
                     padding:0rem;
                 }
@@ -91,12 +99,9 @@
                         &:first-child{
                             margin-right: $margin;
                             @include desktop{
-                                margin: 0rem;
-                                max-width: 120px;
-                                width: 100%;
-                                text-align: left;
+                                margin-right: 0rem;
+                                margin-top: 1rem;
                             }
-                            
                         }
                          
                         a{ 
@@ -108,23 +113,22 @@
                             }
                             
                         }
-                        @include desktop{
-                            margin-top: $padding;
-                        }
+                         
                     }
                     li:last-child a{
                         color:#fff;
-                        padding:$button-padding;
+                        padding:$button-padding 1.5rem;
                         text-transform:capitalize;
                         background-color: #FF4B98;
                         font-size: 1.5rem;
                         border-radius: .5rem;
                         transition: .3s;
                         &:hover{
-                            color:$heading-Color;
+                            color:#fff;
                         }
                         @include desktop{
                             display: block;
+                            margin-top: 1rem;
                         }
                     }
                     
@@ -133,7 +137,7 @@
             @include desktop{
                 display: none;
                 position: absolute;
-                top: 60px;
+                top: 80px;
                 left: 0;
                 width: 100%;
                 border-radius:0px 0px 10px 10px;
@@ -156,6 +160,6 @@
     top: 0;
     left: 0;
     background: #ffff;
-    border-bottom: 1px solid #0000004a;
+    border-bottom: 1px solid #00000014;
      
  }

@@ -67,7 +67,8 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 /*********** 1 Header Menu Css*******/
 /************************************/
 .al-header-menu-section {
-  box-shadow: 0px 0px 95px 0px #7070702e;
+  box-shadow: 0px 0px 191px 0px #70707024;
+  border-bottom: 1px solid #00000014;
 }
 .al-header-menu-section .al-header-menu-area {
   position: relative;
@@ -89,7 +90,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 @media all and (max-width: 991px) {
   .al-header-menu-section .al-header-menu-area .al-logo-area .al-menu-icon {
     display: block;
-    padding: 1rem 0rem;
+    padding: 2rem 0rem;
   }
 }
 @media all and (max-width: 991px) {
@@ -109,7 +110,16 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   align-items: center;
 }
 .al-header-menu-section .al-header-menu-area .al-menu-area .al-menu ul li {
-  padding-right: 3rem;
+  padding-right: 5rem;
+}
+@media all and (max-width: 991px) {
+  .al-header-menu-section .al-header-menu-area .al-menu-area .al-menu ul li {
+    padding-right: 0rem;
+    padding-top: 1rem;
+  }
+}
+.al-header-menu-section .al-header-menu-area .al-menu-area .al-menu ul li:last-child {
+  padding-right: 0rem;
 }
 .al-header-menu-section .al-header-menu-area .al-menu-area .al-menu ul li a {
   color: #2C2643;
@@ -123,7 +133,6 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 @media all and (max-width: 991px) {
   .al-header-menu-section .al-header-menu-area .al-menu-area .al-menu ul {
     flex-direction: column;
-    align-items: flex-start;
   }
 }
 @media all and (max-width: 991px) {
@@ -133,7 +142,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   }
 }
 .al-header-menu-section .al-header-menu-area .al-menu-area .al-button-area {
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
 }
 @media all and (max-width: 991px) {
   .al-header-menu-section .al-header-menu-area .al-menu-area .al-button-area {
@@ -150,14 +159,12 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   }
 }
 .al-header-menu-section .al-header-menu-area .al-menu-area .al-button-area ul li:first-child {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 @media all and (max-width: 991px) {
   .al-header-menu-section .al-header-menu-area .al-menu-area .al-button-area ul li:first-child {
-    margin: 0rem;
-    max-width: 120px;
-    width: 100%;
-    text-align: left;
+    margin-right: 0rem;
+    margin-top: 1rem;
   }
 }
 .al-header-menu-section .al-header-menu-area .al-menu-area .al-button-area ul li a {
@@ -168,14 +175,9 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 .al-header-menu-section .al-header-menu-area .al-menu-area .al-button-area ul li a:hover {
   color: #FF4B98;
 }
-@media all and (max-width: 991px) {
-  .al-header-menu-section .al-header-menu-area .al-menu-area .al-button-area ul li {
-    margin-top: 1rem;
-  }
-}
 .al-header-menu-section .al-header-menu-area .al-menu-area .al-button-area ul li:last-child a {
   color: #fff;
-  padding: 10px;
+  padding: 1.3rem 1.5rem;
   text-transform: capitalize;
   background-color: #FF4B98;
   font-size: 1.5rem;
@@ -183,18 +185,19 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   transition: 0.3s;
 }
 .al-header-menu-section .al-header-menu-area .al-menu-area .al-button-area ul li:last-child a:hover {
-  color: #2C2643;
+  color: #fff;
 }
 @media all and (max-width: 991px) {
   .al-header-menu-section .al-header-menu-area .al-menu-area .al-button-area ul li:last-child a {
     display: block;
+    margin-top: 1rem;
   }
 }
 @media all and (max-width: 991px) {
   .al-header-menu-section .al-header-menu-area .al-menu-area {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
     width: 100%;
     border-radius: 0px 0px 10px 10px;
@@ -216,96 +219,46 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   top: 0;
   left: 0;
   background: #ffff;
-  border-bottom: 1px solid #0000004a;
-}
-
-/************************************/
-/****** Grouth Potential Css ********/
-/************************************/
-.al-growth-section .al-growth-area {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1D25FF;
-  padding: 4rem 3rem;
-  border-radius: 0.5rem;
-  transform: translateY(76px);
-}
-@media all and (max-width: 991px) {
-  .al-growth-section .al-growth-area {
-    flex-direction: column;
-  }
-}
-.al-growth-section .al-growth-area .al-growth-content h1 {
-  color: #FFFFFF;
-  font-size: 4rem;
-  font-weight: 900;
-}
-@media all and (max-width: 991px) {
-  .al-growth-section .al-growth-area .al-growth-content h1 {
-    font-size: 3rem;
-  }
-}
-@media all and (max-width: 991px) {
-  .al-growth-section .al-growth-area .al-growth-content h1 {
-    margin-bottom: 1rem;
-  }
-}
-.al-growth-section .al-growth-area .al-growth-content p {
-  color: #ECECEC;
-  font-size: 1.8rem;
-  font-weight: 300;
-}
-@media all and (max-width: 991px) {
-  .al-growth-section .al-growth-area .al-growth-content {
-    text-align: center;
-  }
-}
-.al-growth-section .al-growth-area .al-growth-button a {
-  font-size: 1.7rem;
-  background-color: #FFFFFF;
-  color: #1D25FF;
-  font-weight: 500;
-  padding: 1rem;
-  border-radius: 5px;
-  transition: 0.3s;
-  display: block;
-}
-.al-growth-section .al-growth-area .al-growth-button a:hover {
-  color: #2C2643;
-}
-@media only screen and (max-width: 1200px) and (min-width: 992px) {
-  .al-growth-section .al-growth-area .al-growth-button a {
-    font-size: 1.5rem;
-  }
-}
-.al-growth-section .al-growth-area .al-growth-button p {
-  color: #FFFFFF;
-  font-weight: 300;
-  padding-top: 1rem;
-  text-align: center;
+  border-bottom: 1px solid #00000014;
 }
 
 /************************************/
 /*********** Footer Css *************/
 /************************************/
 .al-footer-section {
+  position: relative;
   background-color: #2C2643;
-  padding-top: 11rem;
-  padding-bottom: 1rem;
+  padding-top: 17rem;
+  padding-bottom: 2rem;
+}
+@media all and (max-width: 991px) {
+  .al-footer-section .footer-area {
+    margin-bottom: 3rem;
+  }
 }
 .al-footer-section .footer-area .footer-title h1 {
   color: #FFFFFF;
   font-size: 2.2rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 @media all and (max-width: 767px) {
   .al-footer-section .footer-area .footer-title h1 {
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
+  .al-footer-section .footer-area .footer-title h1 {
+    margin-bottom: 1rem;
+  }
+}
+@media all and (max-width: 357px) {
+  .al-footer-section .footer-area .al-footer-margin {
+    margin-top: 65px;
+  }
+}
+@media all and (max-width: 991px) {
   .al-footer-section .footer-area {
     text-align: center;
   }
@@ -325,13 +278,26 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0rem;
-  border-bottom: 1px solid #ccc2c2ba;
+  border-bottom: 1px solid #ccc2c247;
+  margin-top: 5rem;
+  padding-bottom: 3rem;
 }
 @media all and (max-width: 575px) {
   .al-footer-section .social-area {
     flex-direction: column;
+    align-items: start;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5rem;
   }
+}
+.al-footer-section .social-area .langues-choice {
+  position: relative;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option {
+  position: absolute;
+  top: -22px;
+  left: 0;
 }
 .al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv label {
   position: relative;
@@ -343,7 +309,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   width: 20rem;
   padding: 1rem;
   background: #2C2643;
-  border: 1px solid #ccc2c2ba;
+  border: 1px solid #ccc2c247;
   color: #FFFFFF;
   font-size: 1.6rem;
   border-radius: 0.5rem;
@@ -358,6 +324,95 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   pointer-events: none;
   padding-right: 1rem;
 }
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper {
+  z-index: 1;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #ffffff47;
+  color: #D8D8D8;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper .current_lang {
+  cursor: pointer;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper .current_lang .lang {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper .current_lang .lang span.lang-txt {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 16px;
+  position: relative;
+  top: -1px;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper .current_lang .lang img {
+  width: 20px;
+  margin-left: 0;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper .current_lang .lang span.fa {
+  color: #999;
+  font-weight: 400;
+  font-size: 12px;
+  position: relative;
+  top: -1px;
+  margin-left: 30px;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper .current_lang .lang span.fa i {
+  font-size: 20px;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper .more_lang {
+  transform: translateY(-20px);
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s cubic-bezier(0.25, 1.15, 0.35, 1.15);
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper .more_lang .lang span.lang-txt {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 16px;
+  position: relative;
+  top: -1px;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper .more_lang .lang span {
+  color: #999;
+  font-weight: 400;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper.active .more_lang {
+  display: block;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper.active .more_lang.active {
+  opacity: 1;
+  transform: translateY(0px);
+  background: #2C2643;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper.active .more_lang.active .lang {
+  padding: 10px 12px;
+  border-top: 1px solid #ffffff47;
+  display: flex;
+  border-right: 1px solid #ffffff47;
+  align-items: center;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper.active .more_lang.active .lang img {
+  width: 20px;
+  margin-left: 0;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper.active .more_lang .lang:hover {
+  background: #5766b2;
+  color: #fff;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper.active .more_lang .lang:hover span {
+  color: #fff;
+}
+.al-footer-section .social-area .langues-choice .second-selected-option .second-selecteddiv .translate_wrapper.active .translate_wrapper.active .lang {
+  border-bottom: 1px solid #eaeaea;
+}
 .al-footer-section .social-area .social-icon ul {
   display: flex;
   align-items: center;
@@ -365,12 +420,15 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 @media all and (max-width: 575px) {
   .al-footer-section .social-area .social-icon ul {
     flex-wrap: wrap;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
   }
 }
 .al-footer-section .social-area .social-icon ul li {
-  margin-right: 2rem;
+  margin-right: 3rem;
+}
+.al-footer-section .social-area .social-icon ul li:last-child {
+  margin-right: 0px;
 }
 .al-footer-section .social-area .social-icon ul li a {
   color: #FFFFFF;
@@ -388,9 +446,102 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 .al-footer-section .copyright p {
   color: #FFFFFF;
   font-size: 1.6rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
+}
+.al-footer-section .al-growth-section {
+  position: absolute;
+  top: -107px;
+  left: 0;
+  width: 100%;
+}
+@media all and (max-width: 991px) {
+  .al-footer-section .al-growth-section {
+    top: -192px;
+  }
+}
+@media all and (max-width: 516px) {
+  .al-footer-section .al-growth-section {
+    top: -247px;
+  }
+}
+.al-footer-section .al-growth-section .al-growth-area {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1D25FF;
+  padding: 6rem 6rem;
+  border-radius: 0.5rem;
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .al-footer-section .al-growth-section .al-growth-area {
+    padding: 4rem 3rem;
+  }
+}
+@media all and (max-width: 991px) {
+  .al-footer-section .al-growth-section .al-growth-area {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.al-footer-section .al-growth-section .al-growth-area .al-growth-content h1 {
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: 900;
+}
+@media all and (max-width: 991px) {
+  .al-footer-section .al-growth-section .al-growth-area .al-growth-content h1 {
+    font-size: 3rem;
+  }
+}
+@media all and (max-width: 991px) {
+  .al-footer-section .al-growth-section .al-growth-area .al-growth-content h1 {
+    margin-bottom: 2rem;
+  }
+}
+.al-footer-section .al-growth-section .al-growth-area .al-growth-content p {
+  color: #ECECEC;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+@media all and (max-width: 991px) {
+  .al-footer-section .al-growth-section .al-growth-area .al-growth-content {
+    text-align: center;
+  }
+}
+.al-footer-section .al-growth-section .al-growth-area .al-growth-button a {
+  font-size: 1.7rem;
+  background-color: #FFFFFF;
+  color: #1D25FF;
+  font-weight: 500;
+  padding: 1.3rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-block;
+}
+.al-footer-section .al-growth-section .al-growth-area .al-growth-button a:hover {
+  color: #2C2643;
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .al-footer-section .al-growth-section .al-growth-area .al-growth-button a {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+@media all and (max-width: 357px) {
+  .al-footer-section .al-growth-section .al-growth-area .al-growth-button a {
+    padding: 1rem;
+  }
+}
+.al-footer-section .al-growth-section .al-growth-area .al-growth-button p {
+  color: #FFFFFF;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1rem;
 }
 
+/************************************/
+/****** Grouth Potential Css ********/
+/************************************/
 /************************************/
 /************* 1 CRM  Css ***********/
 /************************************/
@@ -398,7 +549,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   width: 70%;
   margin: 0 auto;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 7rem;
   position: relative;
 }
 @media all and (max-width: 767px) {
@@ -421,6 +572,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 }
 @media all and (max-width: 575px) {
   .al-crm .al-crm-main-area .al-crm-heading h1 {
+    font-size: 5rem;
     font-size: 3rem;
   }
 }
@@ -428,9 +580,10 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   font-size: 1.8rem;
   color: #494755;
   margin-top: 2rem;
+  font-weight: 300;
 }
 .al-crm .al-crm-main-area .al-crm-button {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .al-crm .al-crm-main-area .al-crm-button ul {
   display: flex;
@@ -448,21 +601,27 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   color: #2C2643;
 }
 .al-crm .al-crm-main-area .al-crm-button ul li a span i {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 4rem;
   background: #FF4B98;
   border-radius: 50%;
   font-size: 1.6rem;
-  line-height: 36px;
+  line-height: 40px;
   color: #FFFFFF;
 }
 .al-crm .al-crm-main-area .al-crm-button ul li a span:first-child {
   margin-right: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #FF4B98;
+  display: block;
+  line-height: 33px;
+  border-radius: 50%;
 }
 .al-crm .al-crm-main-area .al-crm-button ul li:first-child a {
   background-color: #4CA54C;
-  padding: 10px;
-  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 0.3rem;
   color: #FFFFFF;
   transition: 0.3s;
   margin-right: 2rem;
@@ -470,16 +629,25 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 @media all and (max-width: 575px) {
   .al-crm .al-crm-main-area .al-crm-button ul li:first-child a {
     margin-right: 0rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     display: block;
+    margin-bottom: 1rem;
   }
 }
 .al-crm .al-crm-main-area .al-crm-button ul li:first-child a:hover {
   background-color: #FF4B98;
-  color: #2C2643;
+  color: #fff;
+}
+.al-crm .al-crm-main-area .al-crm-button ul li:last-child a {
+  display: flex;
+  align-items: center;
+}
+.al-crm .al-crm-main-area .al-crm-button ul li:last-child a span img {
+  width: 9px;
+  height: 19px;
 }
 .al-crm .al-crm-main-area .al-crm-image-area {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 .al-crm .al-crm-main-area .al-crm-image-area .al-crm-image {
   width: 100%;
@@ -606,9 +774,13 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 /************************************/
 /************* 1 amazing Css ********/
 /************************************/
-.al-amazing-section .al-amazing-main-area {
-  margin-top: 2rem;
-  margin-bottom: 5rem;
+.al-amazing-section {
+  padding: 10rem 0rem;
+}
+@media all and (max-width: 991px) {
+  .al-amazing-section {
+    padding: 5rem 0rem;
+  }
 }
 .al-amazing-section .al-amazing-main-area .al-amazing-content {
   overflow: hidden;
@@ -628,17 +800,17 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 }
 @media all and (max-width: 575px) {
   .al-amazing-section .al-amazing-main-area .al-amazing-content .al-amazing-title h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 .al-amazing-section .al-amazing-main-area .al-amazing-content .al-amazing-title p {
   font-size: 1.8rem;
   color: #494755;
   font-weight: 300;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 .al-amazing-section .al-amazing-main-area .item-main-area {
-  margin-top: 3rem;
+  padding-top: 3rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -647,6 +819,11 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 @media all and (max-width: 767px) {
   .al-amazing-section .al-amazing-main-area .item-main-area {
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .al-amazing-section .al-amazing-main-area .item-main-area {
+    justify-content: flex-start;
   }
 }
 .al-amazing-section .al-amazing-main-area .item-main-area .single-per-item {
@@ -664,7 +841,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   height: 8.5rem;
   display: inline-block;
   text-align: center;
-  line-height: 8.7rem;
+  line-height: 7.7rem;
   background-image: linear-gradient(183deg, #8FEBCF, #4760FF);
   font-size: 3.5rem;
   border-radius: 50%;
@@ -685,7 +862,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   background-image: linear-gradient(183deg, #A8F2FF, #39edf3) !important;
 }
 .al-amazing-section .al-amazing-main-area .item-main-area .single-per-item .amazing-item .amazing-single-item .amazing-icon .al-amazing-icon-5 {
-  background-image: linear-gradient(183deg, #34A73C, #AFC92E) !important;
+  background-image: linear-gradient(183deg, #FFE4E1, #FFC99E) !important;
 }
 .al-amazing-section .al-amazing-main-area .item-main-area .single-per-item .amazing-item .amazing-single-item .amazing-icon .al-amazing-icon-6 {
   background-image: linear-gradient(183deg, #2F236D, #9100E3) !important;
@@ -697,7 +874,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   font-size: 2.2rem;
   font-weight: 700;
   color: #2C2643;
-  padding-top: 1rem;
+  padding-top: 2rem;
   width: 12rem;
   margin: 0 auto;
 }
@@ -719,12 +896,15 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   text-align: center;
   position: relative;
   z-index: 4;
+  width: 88%;
 }
 .al-amazing-section .al-amazing-main-area .item-main-area .single-per-item .main-overly .overly-content h1 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #FFFFFF;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  width: 12rem;
+  margin: 0 auto;
 }
 .al-amazing-section .al-amazing-main-area .item-main-area .single-per-item .main-overly .overly-content span {
   width: 5rem;
@@ -817,22 +997,35 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
     border-right: 1px solid #D8D8D8;
   }
 }
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .al-amazing-section .al-amazing-main-area .item-main-area .single-per-item:nth-child(5) {
+    border-left: none;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .al-amazing-section .al-amazing-main-area .item-main-area .single-per-item:nth-child(7) {
+    border-top: none;
+  }
+}
 
 /************************************/
 /************* Busines  Css *********/
 /************************************/
 .al-busines-section {
-  padding-top: 5rem;
-  margin: 2rem 0rem;
+  padding: 10rem 0rem;
   box-shadow: inset 0px 118px 122px 0px #d8d8d821;
-  padding-bottom: 3rem;
+}
+@media all and (max-width: 991px) {
+  .al-busines-section {
+    padding: 5rem 0rem;
+  }
 }
 .al-busines-section .al-busines-content {
   width: 80%;
 }
 @media all and (max-width: 991px) {
   .al-busines-section .al-busines-content {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     width: 100%;
   }
 }
@@ -840,7 +1033,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   font-size: 4rem;
   color: #2C2643;
   font-weight: 900;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 @media all and (max-width: 991px) {
   .al-busines-section .al-busines-content h1 {
@@ -849,14 +1042,14 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 }
 @media all and (max-width: 575px) {
   .al-busines-section .al-busines-content h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 .al-busines-section .al-busines-content p {
   font-size: 1.8rem;
   color: #494755;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .al-busines-section .al-busines-content ul li {
   padding: 1rem 0rem;
@@ -869,10 +1062,10 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 }
 .al-busines-section .al-busines-content ul li span i {
   color: #4CAF50;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 .al-busines-section .al-busines-content .al-busines-button {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .al-busines-section .al-busines-content .al-busines-button span a {
   font-size: 1.7rem;
@@ -883,13 +1076,14 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 }
 .al-busines-section .al-busines-content .al-busines-button span:first-child a {
   color: #FFFFFF;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #FF4B98;
   border-radius: 5px;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 .al-busines-section .al-busines-content .al-busines-button span:first-child a:hover {
-  color: #2C2643;
+  color: #fff;
+  background-color: #4CA54C;
 }
 .al-busines-section .al-busines-content .al-busines-button span:last-child a {
   border-bottom: 1px solid #2C2643;
@@ -898,9 +1092,10 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   color: #FF4B98;
 }
 .al-busines-section .al-busines-image-area .al-busines-image {
-  width: 100%;
+  width: 90%;
   height: 100%;
   position: relative;
+  margin-left: auto;
 }
 @media all and (max-width: 991px) {
   .al-busines-section .al-busines-image-area .al-busines-image {
@@ -915,7 +1110,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.al-busines-section .al-busines-image-area .al-busines-image span {
+.al-busines-section .al-busines-image-area .al-busines-image .al-first-busines {
   background-color: #FFFFFF;
   border-radius: 3rem;
   width: 21rem;
@@ -928,34 +1123,34 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   bottom: -44px;
 }
 @media all and (max-width: 991px) {
-  .al-busines-section .al-busines-image-area .al-busines-image span {
+  .al-busines-section .al-busines-image-area .al-busines-image .al-first-busines {
     width: 18rem;
     height: 18rem;
     left: -49px;
   }
 }
 @media all and (max-width: 575px) {
-  .al-busines-section .al-busines-image-area .al-busines-image span {
+  .al-busines-section .al-busines-image-area .al-busines-image .al-first-busines {
     width: 15rem;
     height: 15rem;
     left: -16px;
   }
 }
-.al-busines-section .al-busines-image-area .al-busines-image span .al-span-image {
+.al-busines-section .al-busines-image-area .al-busines-image .al-first-busines .al-span-image {
   width: 95%;
   height: 97%;
 }
 @media all and (max-width: 991px) {
-  .al-busines-section .al-busines-image-area .al-busines-image span .al-span-image {
+  .al-busines-section .al-busines-image-area .al-busines-image .al-first-busines .al-span-image {
     width: 101%;
   }
 }
 @media all and (max-width: 575px) {
-  .al-busines-section .al-busines-image-area .al-busines-image span .al-span-image {
+  .al-busines-section .al-busines-image-area .al-busines-image .al-first-busines .al-span-image {
     width: 102%;
   }
 }
-.al-busines-section .al-busines-image-area .al-busines-image span .al-span-image img {
+.al-busines-section .al-busines-image-area .al-busines-image .al-first-busines .al-span-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -966,15 +1161,16 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 /************** Help  Css ***********/
 /************************************/
 .al-help-section {
-  padding: 3rem 0rem;
+  padding: 5rem 0rem;
+  padding-bottom: 10rem;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 991px) {
   .al-help-section {
-    padding-bottom: 0rem;
+    padding-bottom: 5rem;
   }
 }
 .al-help-section .al-help-image-area .al-help-image {
-  width: 100%;
+  width: 90%;
   height: 100%;
   position: relative;
 }
@@ -999,7 +1195,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.al-help-section .al-help-image-area .al-help-image span {
+.al-help-section .al-help-image-area .al-help-image .al-first-busines {
   background-color: #FFFFFF;
   border-radius: 3rem;
   width: 21rem;
@@ -1012,34 +1208,34 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   bottom: -44px;
 }
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
-  .al-help-section .al-help-image-area .al-help-image span {
+  .al-help-section .al-help-image-area .al-help-image .al-first-busines {
     width: 18rem;
     height: 18rem;
   }
 }
 @media all and (max-width: 767px) {
-  .al-help-section .al-help-image-area .al-help-image span {
+  .al-help-section .al-help-image-area .al-help-image .al-first-busines {
     width: 18rem;
     height: 18rem;
   }
 }
 @media all and (max-width: 575px) {
-  .al-help-section .al-help-image-area .al-help-image span {
+  .al-help-section .al-help-image-area .al-help-image .al-first-busines {
     width: 15rem;
     height: 15rem;
     right: -46px;
   }
 }
-.al-help-section .al-help-image-area .al-help-image span .al-span-image {
+.al-help-section .al-help-image-area .al-help-image .al-first-busines .al-span-image {
   width: 88%;
   height: 97%;
 }
 @media all and (max-width: 767px) {
-  .al-help-section .al-help-image-area .al-help-image span .al-span-image {
+  .al-help-section .al-help-image-area .al-help-image .al-first-busines .al-span-image {
     width: 97%;
   }
 }
-.al-help-section .al-help-image-area .al-help-image span .al-span-image img {
+.al-help-section .al-help-image-area .al-help-image .al-first-busines .al-span-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1047,7 +1243,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 }
 .al-help-section .al-help-content {
   width: 80%;
-  margin: 0 auto;
+  margin-left: auto;
 }
 @media all and (max-width: 991px) {
   .al-help-section .al-help-content {
@@ -1077,7 +1273,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   }
 }
 .al-help-section .al-help-content .al-help-accrodion {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .al-help-section .al-help-content .al-help-accrodion .al-accordion {
   position: relative;
@@ -1152,8 +1348,7 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   left: -16px;
 }
 .al-help-section .al-help-content .al-help-accrodion p {
-  padding-top: 1rem;
-  font-size: #494755;
+  padding-top: 2rem;
   font-size: 1.7rem;
   font-weight: 300;
   color: #2C2643;
@@ -1172,9 +1367,14 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 /**************Partner  Css *********/
 /************************************/
 .al-partners-area {
-  padding: 3rem 0rem;
+  padding: 5rem 0rem;
   margin-top: 5rem;
   box-shadow: inset 0px 118px 122px 0px #d8d8d821;
+}
+@media all and (max-width: 991px) {
+  .al-partners-area {
+    margin-top: 0rem;
+  }
 }
 @media all and (max-width: 767px) {
   .al-partners-area {
@@ -1183,7 +1383,6 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 }
 .al-partners-area .al-partner-content {
   text-align: center;
-  padding: 3rem 0rem;
 }
 .al-partners-area .al-partner-content h1 {
   font-size: 4rem;
@@ -1192,21 +1391,48 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
 }
 @media all and (max-width: 991px) {
   .al-partners-area .al-partner-content h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 @media all and (max-width: 575px) {
   .al-partners-area .al-partner-content h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 .al-partners-area .al-partner-content p {
   color: #494755;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 300;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
-.al-partners-area .al-partner-logo-area {
+.al-partners-area .al-partner-logo-main-area {
+  padding-top: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+@media all and (max-width: 767px) {
+  .al-partners-area .al-partner-logo-main-area {
+    display: none;
+  }
+}
+@media all and (min-width: 1400px) {
+  .al-partners-area .al-partner-logo-main-area {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .al-partners-area .al-partner-logo-main-area {
+    width: 90%;
+  }
+}
+@media all and (max-width: 991px) {
+  .al-partners-area .al-partner-logo-main-area {
+    width: 100%;
+  }
+}
+.al-partners-area .al-partner-logo-main-area .al-partner-logo-area {
   width: 25rem;
   height: 25rem;
   background-color: rgba(224, 237, 252, 0.56);
@@ -1215,120 +1441,153 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   margin: 0 auto;
   position: relative;
 }
-@media only screen and (max-width: 1230px) and (min-width: 992px) {
-  .al-partners-area .al-partner-logo-area {
-    width: 15rem;
-    height: 15rem;
-  }
-}
-.al-partners-area .al-partner-logo-area .al-partner-logo {
-  width: 14.4rem;
-  height: 14.4rem;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  margin: 0 auto;
-  line-height: 145px;
-  box-shadow: 0px 0px 8px 0px #70707057;
-}
-.al-partners-area .al-partner-logo-area .al-partner-logo img {
-  line-height: 1px;
-}
-@media only screen and (max-width: 1230px) and (min-width: 992px) {
-  .al-partners-area .al-partner-logo-area .al-partner-logo {
-    width: 10rem;
-    height: 10rem;
-    line-height: 101px;
-  }
-}
-.al-partners-area .al-partner-logo-area .al-partner-overly-image-1 {
-  position: absolute;
-  width: 14.4rem;
-  height: 14.4rem;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  margin: 0 auto;
-  line-height: 145px;
-  box-shadow: 0px 0px 8px 0px #70707057;
-  bottom: 42px;
-  left: -111px;
-}
-@media only screen and (max-width: 1230px) and (min-width: 992px) {
-  .al-partners-area .al-partner-logo-area .al-partner-overly-image-1 {
-    width: 10rem;
-    height: 10rem;
-    line-height: 101px;
-    bottom: 10px;
-    left: -88px;
-  }
-}
-.al-partners-area .al-partner-logo-area .al-partner-overly-image-2 {
-  position: absolute;
-  width: 14.4rem;
-  height: 14.4rem;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  margin: 0 auto;
-  line-height: 145px;
-  box-shadow: 0px 0px 8px 0px #70707057;
-  bottom: 42px;
-  left: -134px;
-}
-@media only screen and (max-width: 1230px) and (min-width: 992px) {
-  .al-partners-area .al-partner-logo-area .al-partner-overly-image-2 {
-    width: 10rem;
-    height: 10rem;
-    line-height: 101px;
-    bottom: 10px;
-    left: -177px;
-  }
-}
-@media only screen and (max-width: 1200px) and (min-width: 992px) {
-  .al-partners-area .al-partner-logo-area .al-partner-overly-image-2 {
-    left: -137px;
-  }
-}
-.al-partners-area .al-partner-logo-area .al-partner-overly-image-3 {
-  position: absolute;
-  width: 14.4rem;
-  height: 14.4rem;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  margin: 0 auto;
-  line-height: 145px;
-  box-shadow: 0px 0px 8px 0px #70707057;
-  bottom: 42px;
-  right: -111px;
-}
-@media only screen and (max-width: 1230px) and (min-width: 992px) {
-  .al-partners-area .al-partner-logo-area .al-partner-overly-image-3 {
-    width: 10rem;
-    height: 10rem;
-    line-height: 101px;
-    bottom: 10px;
-    right: -88px;
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .al-partners-area .al-partner-logo-main-area .al-partner-logo-area {
+    width: 24rem;
   }
 }
 @media all and (max-width: 991px) {
-  .al-partners-area .al-partner-logo-area {
-    display: none;
+  .al-partners-area .al-partner-logo-main-area .al-partner-logo-area {
+    width: 19rem;
+    height: 19rem;
+  }
+}
+.al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-logo {
+  width: 14.4rem;
+  height: 14.4rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  line-height: 145px;
+  box-shadow: 0px 0px 8px 0px #70707057;
+}
+.al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-logo img {
+  line-height: 1px;
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-logo {
+    width: 13.4rem;
+    height: 13.4rem;
+  }
+}
+@media all and (max-width: 991px) {
+  .al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-logo {
+    width: 10.4rem;
+    height: 10.4rem;
+    line-height: 10.9rem;
+  }
+}
+.al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-overly-image-1 {
+  position: absolute;
+  width: 14.4rem;
+  height: 14.4rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  line-height: 145px;
+  box-shadow: 0px 0px 8px 0px #70707057;
+  bottom: 42px;
+  left: -99px;
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-overly-image-1 {
+    width: 13.4rem;
+    height: 13.4rem;
+    left: -84px;
+  }
+}
+@media all and (max-width: 991px) {
+  .al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-overly-image-1 {
+    width: 10.4rem;
+    height: 10.4rem;
+    line-height: 10.9rem;
+    bottom: 1.3rem;
+    left: -4.6rem;
+  }
+}
+.al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-overly-image-2 {
+  position: absolute;
+  width: 14.4rem;
+  height: 14.4rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  line-height: 145px;
+  box-shadow: 0px 0px 8px 0px #70707057;
+  bottom: 42px;
+  left: -99px;
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-overly-image-2 {
+    width: 13.4rem;
+    height: 13.4rem;
+    left: -92px;
+  }
+}
+@media all and (max-width: 991px) {
+  .al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-overly-image-2 {
+    width: 10.4rem;
+    height: 10.4rem;
+    bottom: 1.3rem;
+    left: -7.6rem;
+    line-height: 10.9rem;
+  }
+}
+.al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-overly-image-3 {
+  position: absolute;
+  width: 14.4rem;
+  height: 14.4rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  line-height: 145px;
+  box-shadow: 0px 0px 8px 0px #70707057;
+  bottom: 42px;
+  right: -99px;
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-overly-image-3 {
+    width: 13.4rem;
+    height: 13.4rem;
+    right: -84px;
+  }
+}
+@media all and (max-width: 991px) {
+  .al-partners-area .al-partner-logo-main-area .al-partner-logo-area .al-partner-overly-image-3 {
+    width: 10.4rem;
+    height: 10.4rem;
+    line-height: 10.9rem;
+    bottom: 1.3rem;
+    right: -4.5rem;
   }
 }
 .al-partners-area .al-partner-description {
   text-align: center;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 .al-partners-area .al-partner-description p {
   font-size: 1.8rem;
   color: #494755;
   font-weight: 300;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 12rem;
+}
+@media all and (max-width: 991px) {
+  .al-partners-area .al-partner-description p {
+    padding-bottom: 17rem;
+  }
+}
+@media all and (max-width: 516px) {
+  .al-partners-area .al-partner-description p {
+    padding-bottom: 22rem;
+  }
 }
 .al-partners-area .al-mobile-responsive-area {
   display: none;
 }
-@media all and (max-width: 991px) {
+@media all and (max-width: 767px) {
   .al-partners-area .al-mobile-responsive-area {
     display: block;
   }
@@ -1347,12 +1606,21 @@ input:focus, select:focus, textarea:focus, form:focus, button:focus {
   line-height: 145px;
   box-shadow: 0px 0px 8px 0px #70707057;
   text-align: center;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 @media all and (max-width: 767px) {
   .al-partners-area .al-mobile-responsive-area .al-mobile-responsive .al-mobile-design {
-    margin-right: 2rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+  }
+}
+@media all and (max-width: 575px) {
+  .al-partners-area .al-mobile-responsive-area .al-mobile-responsive .al-mobile-design {
+    margin-right: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
